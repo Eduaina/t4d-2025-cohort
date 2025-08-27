@@ -10,8 +10,7 @@
 
 ---
 ### ✅ Deliverable for Phase 2:
-**Mini Project 1** → 
-💡 By end of **Phase 2**, you should have built a **functional static website**:
+**Mini Project 1** → Build **functional static website**:
 
 * Landing Page
 * Signup Form
