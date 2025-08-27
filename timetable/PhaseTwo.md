@@ -9,7 +9,8 @@
 * Extend the **mini-project** into a functional **static community web prototype** with persistent user data.
 
 ---
-**Deliverables**
+### ✅ Deliverable for Phase 2:
+**Mini Project 1** → 
 💡 By end of **Phase 2**, you should have built a **functional static website**:
 
 * Landing Page
