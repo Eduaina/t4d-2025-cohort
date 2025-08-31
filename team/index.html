@@ -134,12 +134,10 @@
         function formatTeam(team, teamId) {
             const names = team.map(person => `
             <td>${person.FirstName} ${person.LastName} - ${person.Email}</td>
-            `).join('');
             
-            const groups = team.map(person => `
             <td>${person.GroupName || 'N/A'}</td>
             `).join('');
-            return `<td>Team ${teamId}</td> ${names} ${groups}`
+            return `<td>Team ${teamId}</td> ${names}`
         }
 
         // Function to generate the HTML and insert it into the page
