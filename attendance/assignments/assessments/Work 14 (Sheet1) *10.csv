@@ -1,0 +1,1231 @@
+Id,Start time,Completion time,Email,Name,Total points,Quiz feedback,Grade posted time,Paste Code,Points - Paste Code,Feedback - Paste Code
+1,1/25/24 13:46:25,1/25/24 13:47:18,Iyanuoluwa.Olawoye@womentechsters.org,Iyanuoluwa Olawoye,10,,1/27/24 22:32:40,"// CALLBACK
+const first = function() {
+    console.log(""This message is shown after 5 seconds"")
+};
+setTimeout(first, 5000);
+ 
+// PROMISES
+let countValue = new Promise(function (resolve, reject) {
+    resolve(""Promise resolved"");
+    reject(""Promise error"");
+});
+ 
+countValue
+    .then(function successValue(result) {
+        console.log(""result:"", result);
+    })
+    .catch(function errorHandling(error) {
+        console.error(""Error:"", error);
+    });
+ 
+ 
+// ASYNC AND AWAIT
+async function runProcess() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const json = await response.json();
+    console.log(json);
+}
+  
+runProcess();",10,
+2,1/25/24 13:47:32,1/25/24 13:47:47,Queen.Chuku@womentechsters.org,Queen Chuku,7,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+
+
+
+async function getResult(){
+    const response = await 
+    fetch(""https://randomuser.me/api/"") 
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult)",7,
+3,1/25/24 13:49:03,1/25/24 13:51:29,ZainabAbdulmumin@womentechsters.org,Zainab Abdulmumin,8,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+ 
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+ 
+ 
+ 
+async function getResult(){
+    const response = await
+    fetch(""https://randomuser.me/api/"")
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+ 
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult)",8,
+4,1/25/24 13:48:42,1/25/24 13:51:35,Raihanat.Adewuyi@womentechsters.org,Raihanat Adewuyi,8,,1/27/24 22:32:40,"[1:48 PM] Queen Chuku
+const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+ 
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+ 
+ 
+ 
+async function getResult(){
+    const response = await
+    fetch(""https://randomuser.me/api/"")
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+ 
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult)",8,
+5,1/25/24 13:50:04,1/25/24 13:52:43,Kafayat.Kazeem@womentechsters.org,Kafayat Kazeem,10,,1/27/24 22:32:40,"// CALLBACK const first = function() { console.log(""This message is shown after 5 seconds"") }; setTimeout(first, 5000); 
+
+// PROMISES let countValue = new Promise(function (resolve, reject) { resolve(""Promise resolved""); reject(""Promise error""); }); countValue .then(function successValue(result) { console.log(""result:"", result); }) .catch(function errorHandling(error) { console.error(""Error:"", error); }); 
+
+// ASYNC AND AWAIT async function runProcess() { const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); const json = await response.json(); console.log(json); } runProcess();",10,
+6,1/25/24 13:52:30,1/25/24 13:53:47,ChristianaOsedi@womentechsters.org,Christiana Osedi,10,,1/27/24 22:32:40,"// CALLBACK 
+const first = function() { console.log(""This message is shown after 5 seconds"") }; setTimeout(first, 5000); 
+
+// PROMISES let countValue = new Promise(function (resolve, reject) { resolve(""Promise resolved""); reject(""Promise error""); }); countValue .then(function successValue(result) { console.log(""result:"", result); }) .catch(function errorHandling(error) { console.error(""Error:"", error); }); 
+
+// ASYNC AND AWAIT async function runProcess() { const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); const json = await response.json(); console.log(json); } runProcess();",10,
+7,1/25/24 13:59:11,1/25/24 13:59:20,Fadeelah.Ipaye@womentechsters.org,Fadeelah Ipaye,8,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+ 
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+ 
+ 
+ 
+async function getResult(){
+    const response = await
+    fetch(""https://randomuser.me/api/"")
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+ 
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult)",8,did not see promise in your group
+8,1/25/24 13:58:59,1/25/24 13:59:45,FaithNnamani@womentechsters.org,Faith Nnamani,10,,1/27/24 22:32:40,"// CALLBACK const first = function() { console.log(""This message is shown after 5 seconds"") }; setTimeout(first, 5000); // PROMISES let countValue = new Promise(function (resolve, reject) { resolve(""Promise resolved""); reject(""Promise error""); }); countValue .then(function successValue(result) { console.log(""result:"", result); }) .catch(function errorHandling(error) { console.error(""Error:"", error); }); // ASYNC AND AWAIT async function runProcess() { const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); const json = await response.json(); console.log(json); } runProcess();",10,
+9,1/25/24 13:59:28,1/25/24 14:00:14,JochebedIbrahim@womentechsters.org,Jochebed Ibrahim,8,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+
+async function getResult(){
+    const response = await
+    fetch(""https://randomuser.me/api/"")
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult)",8,
+10,1/25/24 13:59:42,1/25/24 14:00:38,AyobamiDunmoye@womentechsters.org,Ayobami Dunmoye,10,,1/27/24 22:32:40,"// CALLBACK
+const first = function() {
+    console.log(""This message is shown after 5 seconds"")
+};
+setTimeout(first, 5000);
+ 
+// PROMISES
+let countValue = new Promise(function (resolve, reject) {
+    resolve(""Promise resolved"");
+    reject(""Promise error"");
+});
+ 
+countValue
+    .then(function successValue(result) {
+        console.log(""result:"", result);
+    })
+    .catch(function errorHandling(error) {
+        console.error(""Error:"", error);
+    });
+ 
+ 
+// ASYNC AND AWAIT
+async function runProcess() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const json = await response.json();
+    console.log(json);
+}
+  
+runProcess();",10,
+11,1/25/24 13:59:53,1/25/24 14:00:44,Adaobi.Chuma-Okeke@womentechsters.org,Adaobi Chuma-Okeke,10,,1/27/24 22:32:40,"// CALLBACK
+const first = function() {
+    console.log(""This message is shown after 5 seconds"")
+};
+setTimeout(first, 5000);
+
+
+ 
+// PROMISES
+let countValue = new Promise(function (resolve, reject) {
+    resolve(""Promise resolved"");
+    reject(""Promise error"");
+});
+ 
+countValue
+    .then(function successValue(result) {
+        console.log(""result:"", result);
+    })
+    .catch(function errorHandling(error) {
+        console.error(""Error:"", error);
+    });
+ 
+ 
+
+// ASYNC AND AWAIT
+async function runProcess() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const json = await response.json();
+    console.log(json);
+}
+  
+runProcess();
+ 
+  
+ ",10,
+12,1/25/24 14:00:41,1/25/24 14:01:50,Faith.Ekechi@womentechsters.org,Faith Ekechi,8,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+ 
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+ 
+ 
+ 
+async function getResult(){
+    const response = await
+    fetch(""https://randomuser.me/api/"")
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+ 
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult)",8,
+13,1/25/24 13:59:15,1/25/24 14:02:20,Oluwatomisin.Okeke@womentechsters.org,Oluwatomisin Okeke,10,,1/27/24 22:32:40,"// CALLBACK 
+const first = function() { console.log(""This message is shown after 5 seconds"") }; setTimeout(first, 5000); 
+
+// PROMISES 
+let countValue = new Promise(function (resolve, reject) { resolve(""Promise resolved""); reject(""Promise error""); }); countValue .then(function successValue(result) { console.log(""result:"", result); }) .catch(function errorHandling(error) { console.error(""Error:"", error); }); 
+
+// ASYNC AND AWAIT 
+async function runProcess() { const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); const json = await response.json(); console.log(json); } 
+runProcess();",10,
+14,1/25/24 13:53:36,1/25/24 14:06:00,OlufunkeOwoseni@womentechsters.org,Olufunke Owoseni,10,,1/27/24 22:32:40,"// CALLBACK 
+const first = function() {
+
+console.log(""This message is shown after 5 seconds"") }; 
+
+setTimeout(first, 5000);
+
+ // PROMISE
+ let countValue = new Promise(function (resolve, reject) { 
+resolve(""Promise resolved""); 
+reject(""Promise error""); }); 
+
+countValue 
+.then(function successValue(result) { 
+
+console.log(""result:"", result); })
+
+ .catch(function errorHandling(error) { 
+console.error(""Error:"", error); });
+
+ // ASYNC AND AWAIT async function runProcess() { 
+const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); 
+const json = await response.json();
+
+ console.log(json); } 
+ runProcess();",10,
+15,1/25/24 14:06:07,1/25/24 14:07:03,OnoriodeIwema@womentechsters.org,Onoriode Iwema,8,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image""); const profileEmail = document.getElementById(""profile-email""); const profileLocation = document.getElementById(""profile-location""); const profileName = document.getElementById(""profile-name""); const generateBtn = document.getElementById(""generate-btn""); function result(profile){ const data = profile.results[0] profileImage.src = data.picture.medium; profileEmail.textContent = data.email; profileLocation.textContent = data.location.country; profileName.textContent = data.name.first; prof.add(profile) } async function getResult(){ const response = await fetch(""https://randomuser.me/api/"") const profile = await response.json() console.log(profile); result(profile) } getResult(); generateBtn.addEventListener(""click"", getResult)",8,
+16,1/25/24 14:08:03,1/25/24 14:08:43,ChiamakaOdugu@womentechsters.org,Chiamaka Odugu,10,,1/27/24 22:32:40,"// CALLBACK const first = function() { console.log(""This message is shown after 5 seconds"") }; setTimeout(first, 5000); // PROMISES let countValue = new Promise(function (resolve, reject) { resolve(""Promise resolved""); reject(""Promise error""); }); countValue .then(function successValue(result) { console.log(""result:"", result); }) .catch(function errorHandling(error) { console.error(""Error:"", error); }); // ASYNC AND AWAIT async function runProcess() { const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); const json = await response.json(); console.log(json); } runProcess();",10,
+17,1/25/24 14:12:48,1/25/24 14:12:59,SadiyaIdris@womentechsters.org,Sadiya Idris,8,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image""); const profileEmail = document.getElementById(""profile-email""); const profileLocation = document.getElementById(""profile-location""); const profileName = document.getElementById(""profile-name""); const generateBtn = document.getElementById(""generate-btn""); function result(profile){ const data = profile.results[0] profileImage.src = data.picture.medium; profileEmail.textContent = data.email; profileLocation.textContent = data.location.country; profileName.textContent = data.name.first; prof.add(profile) } async function getResult(){ const response = await fetch(""https://randomuser.me/api/"") const profile = await response.json() console.log(profile); result(profile) } getResult(); generateBtn.addEventListener(""click"", getResult)",8,
+18,1/25/24 14:09:44,1/25/24 14:13:09,DorcasSamuel@womentechsters.org,Dorcas Samuel,10,,1/27/24 22:32:40,"const profileImage = document.getElementById(""image""); 
+const profileEmail = document.getElementById(""profile-email""); 
+const profileLocation = document.getElementById(""profile-location""); 
+const profileName = document.getElementById(""profile-name""); 
+const generateBtn = document.getElementById(""generate-btn"");
+
+function result(profile){
+ const data = profile.results[0]
+ profileImage.src = data.picture.medium;
+ profileEmail.textContent = data.email;
+ profileLocation.textContent = data.location.country;
+ profileName.textContent = data.name.first; 
+ prof.add(profile) 
+} 
+
+async function getResult(){ 
+ const response = await fetch(""https://randomuser.me/api/"") 
+ const profile = await response.json()
+ console.log(profile); result(profile) 
+} 
+getResult();
+generateBtn.addEventListener(""click"", getResult)",10,
+19,1/25/24 14:14:39,1/25/24 14:15:22,OluwalayomiLawore@womentechsters.org,Oluwalayomi Lawore,8,,1/27/24 22:32:40,"
+const profileImage = document.getElementById(""image"");
+const profileEmail = document.getElementById(""profile-email"");
+const profileLocation = document.getElementById(""profile-location"");
+const profileName = document.getElementById(""profile-name"");
+const generateBtn = document.getElementById(""generate-btn"");
+ 
+function result(profile){
+    const data = profile.results[0]
+    profileImage.src = data.picture.medium;
+    profileEmail.textContent = data.email;
+    profileLocation.textContent = data.location.country;
+    profileName.textContent = data.name.first;
+    prof.add(profile)
+}
+ 
+ 
+ 
+async function getResult(){
+    const response = await
+    fetch(""https://randomuser.me/api/"")
+    const profile = await response.json()
+    console.log(profile);
+    result(profile)
+ 
+}
+getResult();
+generateBtn.addEventListener(""click"", getResult);",8,
+20,1/25/24 14:11:22,1/25/24 14:17:08,BlessingEffiong-John@womentechsters.org,Blessing Effiong-John,10,,1/27/24 22:32:40,"// CALLBACK const first = function() { 
+console.log(""This message is shown after 5 seconds"") }; 
+setTimeout(first, 5000); 
+// PROMISES let countValue = new Promise(function (resolve, reject) { 
+resolve(""Promise resolved""); reject(""Promise error""); }); 
+
+countValue .then(function successValue(result) { 
+console.log(""result:"", result); 
+}) 
+.catch(function errorHandling(error) { 
+console.error(""Error:"", error)
+; }); 
+
+// ASYNC AND AWAIT async function runProcess() { 
+const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); 
+const json = await response.json(); 
+console.log(json);
+
+ } 
+runProcess();",10,
+21,1/25/24 14:17:01,1/25/24 14:17:38,Sonia.Nwagbogun@womentechsters.org,Sonia Nwagbogun,10,,1/27/24 22:32:40,"// CALLBACK const first = function() { console.log(""This message is shown after 5 seconds"") }; setTimeout(first, 5000); // PROMISES let countValue = new Promise(function (resolve, reject) { resolve(""Promise resolved""); reject(""Promise error""); }); countValue .then(function successValue(result) { console.log(""result:"", result); }) .catch(function errorHandling(error) { console.error(""Error:"", error); }); // ASYNC AND AWAIT async function runProcess() { const response = await fetch('https://jsonplaceholder.typicode.com/todos/1'); const json = await response.json(); console.log(json); } runProcess();",10,
+22,1/25/24 14:17:56,1/25/24 14:18:14,EbereAdekogbe@womentechsters.org,Ebere Adekogbe,10,,1/27/24 22:32:40,"// callback Function
+
+
+ function fetchDataWithCallback(error, data) {if (error){
+    console.error(error);} else{
+        console.log(data);
+    }};
+
+    
+const urlApi = 'https://v2.jokeapi.dev/joke/Any'
+    fetch(urlApi)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        } else {
+            return response.json();
+        }
+    })
+    .then(data => {
+        fetchDataWithCallback(null, data); 
+    })
+    .catch(error => {
+        throw new Error('Invalid URL');
+    });
+
+
+    // PROMISE
+
+
+    function fetchDataFromApi(url) {
+        return new Promise((resolve, reject) => {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('This is an Error');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(new Error('Invalid URL'));
+                });
+        });
+    }
+    
+    const urlAPI = 'https://v2.jokeapi.dev/joke/Any';
+    
+    fetchDataFromApi(urlAPI)
+        .then(data => {
+            console.log(data); // Handle data from the API
+        })
+        .catch(error => {
+            console.error(error); // Handle errors
+        });",10,
+23,1/25/24 14:20:20,1/25/24 14:20:30,Olawunmi.Olabisi@womentechsters.org,Olawunmi Olabisi,10,,1/27/24 22:32:40,"// callback Function function fetchDataWithCallback(error, data) {if (error){ console.error(error);} else{ console.log(data); }}; const urlApi = 'https://v2.jokeapi.dev/joke/Any' fetch(urlApi) .then(response => { if (!response.ok) { throw new Error('This is an Error'); } else { return response.json(); } }) .then(data => { fetchDataWithCallback(null, data); }) .catch(error => { throw new Error('Invalid URL'); }); // PROMISE function fetchDataFromApi(url) { return new Promise((resolve, reject) => { fetch(url) .then(response => { if (!response.ok) { throw new Error('This is an Error'); } return response.json(); }) .then(data => { resolve(data); }) .catch(error => { reject(new Error('Invalid URL')); }); }); } const urlAPI = 'https://v2.jokeapi.dev/joke/Any'; fetchDataFromApi(urlAPI) .then(data => { console.log(data); // Handle data from the API }) .catch(error => { console.error(error); // Handle errors });",10,
+24,1/25/24 14:24:20,1/25/24 14:24:24,BlessingEhapa@womentechsters.org,Blessing Ehapa,5,,1/27/24 22:32:40,"async function getRandomQuote(){ await fetch('https://api.quotable.io/random') .then(response => response.json()) .then(data => quote(null, data.content) const quote = data); result.innerHTML = `<p><\p>` .catch(error => console.log(error)); } const generatorButton = document.getElementById('generator-button'); const quoteResult = document.getElementById('result');",5,no good use of async or callback
+25,1/25/24 14:24:14,1/25/24 14:24:37,VidaNaapire@womentechsters.org,Vida Naapire,10,,1/27/24 22:32:40,"// callback Function
+ 
+ 
+ function fetchDataWithCallback(error, data) {if (error){
+    console.error(error);} else{
+        console.log(data);
+    }};
+ 
+   
+const urlApi = 'https://v2.jokeapi.dev/joke/Any'
+    fetch(urlApi)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        } else {
+            return response.json();
+        }
+    })
+    .then(data => {
+        fetchDataWithCallback(null, data);
+    })
+    .catch(error => {
+        throw new Error('Invalid URL');
+    });
+ 
+ 
+    // PROMISE
+ 
+ 
+    function fetchDataFromApi(url) {
+        return new Promise((resolve, reject) => {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('This is an Error');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(new Error('Invalid URL'));
+                });
+        });
+    }
+   
+    const urlAPI = 'https://v2.jokeapi.dev/joke/Any';
+   
+    fetchDataFromApi(urlAPI)
+        .then(data => {
+            console.log(data); // Handle data from the API
+        })
+        .catch(error => {
+            console.error(error); // Handle errors
+        });",10,
+26,1/25/24 14:24:21,1/25/24 14:25:12,GiftOnuoha@womentechsters.org,Gift Onuoha,10,,1/27/24 22:32:40,"// callback Function
+ 
+ 
+ function fetchDataWithCallback(error, data) {if (error){
+    console.error(error);} else{
+        console.log(data);
+    }};
+ 
+   
+const urlApi = 'https://v2.jokeapi.dev/joke/Any'
+    fetch(urlApi)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        } else {
+            return response.json();
+        }
+    })
+    .then(data => {
+        fetchDataWithCallback(null, data);
+    })
+    .catch(error => {
+        throw new Error('Invalid URL');
+    });
+ 
+ 
+    // PROMISE
+ 
+ 
+    function fetchDataFromApi(url) {
+        return new Promise((resolve, reject) => {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('This is an Error');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(new Error('Invalid URL'));
+                });
+        });
+    }
+   
+    const urlAPI = 'https://v2.jokeapi.dev/joke/Any';
+   
+    fetchDataFromApi(urlAPI)
+        .then(data => {
+            console.log(data); // Handle data from the API
+        })
+        .catch(error => {
+            console.error(error); // Handle errors
+        });",10,
+27,1/25/24 13:47:14,1/25/24 14:25:29,Bridget.Ngonzi@womentechsters.org,Bridget Ngonzi,6,,1/27/24 22:32:40,"async function fetchData() {
+const response = await fetch('https://dog.ceo/api/breeds/list/all')
+    const data = await  response.json()
+    createBreedOptions(data.message)
+  }
+  fetchData();
+  
+  // Creating Breed Options
+  const createBreedOptions = (breedOptions) => {
+    const select = document.getElementById('select');
+    select.innerHTML =`
+      <select class='options' onchange= 'loadPicturesByBreed(this.value)' >
+        <option>Choose a dog breed</option>
+        ${Object.keys(breedOptions).map((breed) => {
+          return `<option>${breed}</option>`
+        }
+        )}
+      </select>
+    `
+  }
+  
+  // loadPicturesByBreed
+  async function loadPicturesByBreed(breedName) {
+    if(breedName !== 'Choose a dog breed') {
+const response = await fetch(`https://dog.ceo/api/breed/${breedName}/images`)
+        const data = await  response.json()
+        let resultImg = data.message
+        console.log(resultImg )
+        const dogImages = document.getElementById('dog-images')
+        dogImages.innerHTML = ` <div id=""breed-img"" style=""background-image: url('${resultImg[0]}');""></div>`;
+      } else {
+    const dogImages = document.getElementById('dog-images')
+    dogImages.innerHTML = ``;
+  }
+  }",6,no use of callback or promises without async
+28,1/25/24 14:21:14,1/25/24 14:25:46,FeyisaraAgiri@womentechsters.org,Feyisara Agiri,10,,1/27/24 22:32:40,"// callback Function function fetchDataWithCallback(error, data) {if (error){ console.error(error);} else{ console.log(data); }}; 
+
+const urlApi = 'https://v2.jokeapi.dev/joke/Any' fetch(urlApi) .then(response => { if (!response.ok) { throw new Error('This is an Error'); } else { return response.json(); } }) .then(data => { fetchDataWithCallback(null, data); }) 
+.catch(error => { throw new Error('Invalid URL'); });
+
+ // PROMISE function fetchDataFromApi(url) { return new Promise((resolve, reject) => { fetch(url) .then(response => { if (!response.ok) { throw new Error('This is an Error'); } return response.json(); }) 
+.then(data => { resolve(data); }) .catch(error => { reject(new Error('Invalid URL')); }); }); } 
+
+const urlAPI = 'https://v2.jokeapi.dev/joke/Any'; fetchDataFromApi(urlAPI) .then(data => { console.log(data); 
+}) 
+.catch(error => { console.error(error);
+ });",10,
+29,1/25/24 14:25:31,1/25/24 14:26:51,OlaideAlabi@womentechsters.org,Olaide Alabi,6,,1/27/24 22:32:40,"async function fetchData() { const response = await fetch('https://dog.ceo/api/breeds/list/all') const data = await response.json() createBreedOptions(data.message) } fetchData(); // Creating Breed Options const createBreedOptions = (breedOptions) => { const select = document.getElementById('select'); select.innerHTML =` <select class='options' onchange= 'loadPicturesByBreed(this.value)' > <option>Choose a dog breed</option> ${Object.keys(breedOptions).map((breed) => { return `<option>${breed}</option>` } )} </select> ` } // loadPicturesByBreed async function loadPicturesByBreed(breedName) { if(breedName !== 'Choose a dog breed') { const response = await fetch(`https://dog.ceo/api/breed/${breedName}/images`) const data = await response.json() let resultImg = data.message console.log(resultImg ) const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ` <div id=""breed-img"" style=""background-image: url('${resultImg[0]}');""></div>`; } else { const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ``; } }",6,
+30,1/25/24 14:26:19,1/25/24 14:26:57,LoisUgbe@womentechsters.org,Lois Ugbe,6,,1/27/24 22:32:40,"async function fetchData() {
+const response = await fetch('https://dog.ceo/api/breeds/list/all')
+    const data = await  response.json()
+    createBreedOptions(data.message)
+  }
+  fetchData();
+  
+  // Creating Breed Options
+  const createBreedOptions = (breedOptions) => {
+    const select = document.getElementById('select');
+    select.innerHTML =`
+      <select class='options' onchange= 'loadPicturesByBreed(this.value)' >
+        <option>Choose a dog breed</option>
+        ${Object.keys(breedOptions).map((breed) => {
+          return `<option>${breed}</option>`
+        }
+        )}
+      </select>
+    `
+  }
+  
+  // loadPicturesByBreed
+  async function loadPicturesByBreed(breedName) {
+    if(breedName !== 'Choose a dog breed') {
+const response = await fetch(`https://dog.ceo/api/breed/${breedName}/images`)
+        const data = await  response.json()
+        let resultImg = data.message
+        console.log(resultImg )
+        const dogImages = document.getElementById('dog-images')
+        dogImages.innerHTML = ` <div id=""breed-img"" style=""background-image: url('${resultImg[0]}');""></div>`;
+      } else {
+    const dogImages = document.getElementById('dog-images')
+    dogImages.innerHTML = ``;
+  }
+  }",6,
+31,1/25/24 14:26:45,1/25/24 14:27:11,GloriaIseghehi@womentechsters.org,Gloria Iseghehi,6,,1/27/24 22:32:40,"async function fetchData() { const response = await fetch('https://dog.ceo/api/breeds/list/all') const data = await response.json() createBreedOptions(data.message) } fetchData(); // Creating Breed Options const createBreedOptions = (breedOptions) => { const select = document.getElementById('select'); select.innerHTML =` <select class='options' onchange= 'loadPicturesByBreed(this.value)' > <option>Choose a dog breed</option> ${Object.keys(breedOptions).map((breed) => { return `<option>${breed}</option>` } )} </select> ` } // loadPicturesByBreed async function loadPicturesByBreed(breedName) { if(breedName !== 'Choose a dog breed') { const response = await fetch(`https://dog.ceo/api/breed/${breedName}/images`) const data = await response.json() let resultImg = data.message console.log(resultImg ) const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ` <div id=""breed-img"" style=""background-image: url('${resultImg[0]}');""></div>`; } else { const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ``; } }",6,
+32,1/25/24 14:27:11,1/25/24 14:27:33,EuchariaOkoye@womentechsters.org,Eucharia Okoye,7,,1/27/24 22:32:40,"function fetchDataFromApi(url) {
+    return new Promise((resolve, reject) => {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('This is an Error');
+                }
+                return response.json();
+            })
+            .then(data => {
+                resolve(data);
+            })
+            .catch(error => {
+                reject(new Error('This is an Invalid URL'));
+            });
+    });
+}
+
+const urlApi = 'https://v2.jokeapi.dev/joke/Any';
+
+fetchDataFromApi(urlApi)
+    .then(data => {
+        console.log(data);
+        
+    })
+    .catch(error => {
+        console.error(error);
+    
+    });",7,no use of async
+33,1/25/24 14:27:23,1/25/24 14:28:06,OluwakemiOlorunmaiye@womentechsters.org,Oluwakemi Olorunmaiye,7,,1/27/24 22:32:40,"async function fetchData() { const response = await fetch('https://dog.ceo/api/breeds/list/all') const data = await response.json() createBreedOptions(data.message) } fetchData(); // Creating Breed Options const createBreedOptions = (breedOptions) => { const select = document.getElementById('select'); select.innerHTML =` <select class='options' onchange= 'loadPicturesByBreed(this.value)' > <option>Choose a dog breed</option> ${Object.keys(breedOptions).map((breed) => { return `<option>${breed}</option>` } )} </select> ` } // loadPicturesByBreed async function loadPicturesByBreed(breedName) { if(breedName !== 'Choose a dog breed') { const response = await fetch(`https://dog.ceo/api/breed/${breedName}/images`) const data = await response.json() let resultImg = data.message console.log(resultImg ) const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ` <div id=""breed-img"" style=""background-image: url('${resultImg[0]}');""></div>`; } else { const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ``; } }",7,
+34,1/25/24 14:29:08,1/25/24 14:29:32,Benedictta.Nnaji@womentechsters.org,Benedictta Nnaji,7,,1/27/24 22:32:40,"async function fetchData() { const response = await fetch('https://dog.ceo/api/breeds/list/all') const data = await response.json() createBreedOptions(data.message) } fetchData(); // Creating Breed Options const createBreedOptions = (breedOptions) => { const select = document.getElementById('select'); select.innerHTML =` <select class='options' onchange= 'loadPicturesByBreed(this.value)' > <option>Choose a dog breed</option> ${Object.keys(breedOptions).map((breed) => { return `<option>${breed}</option>` } )} </select> ` } // loadPicturesByBreed async function loadPicturesByBreed(breedName) { if(breedName !== 'Choose a dog breed') { const response = await fetch(`https://dog.ceo/api/breed/${breedName}/images`) const data = await response.json() let resultImg = data.message console.log(resultImg ) const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ` <div id=""breed-img"" style=""background-image: url('${resultImg[0]}');""></div>`; } else { const dogImages = document.getElementById('dog-images') dogImages.innerHTML = ``; } }",7,
+35,1/25/24 14:16:09,1/25/24 14:29:42,Victoria.Oyekunle@womentechsters.org,Victoria Oyekunle,7,,1/27/24 22:32:40,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <link rel=""stylesheet"" href=""./style.css"">
+    <title> Quote Generator</title>
+</head>
+<body>
+    <h1>Random Quotes Generator</h1>
+    <div id=""result""></div>
+    <button id=""generate-button"">Generate Quote</button>
+<script src=""./assignment.js""></script>
+</body>
+</html>
+
+
+[2:29 PM] Maria Namatovu
+const quoteResult = document.getElementById('result');
+ 
+function getRandomQuote() {
+    fetch('https://api.quotable.io/random')
+        .then(response => response.json())
+        .then(data => {
+            const quote = data.content;
+            quoteResult.innerHTML = `<p>${quote}</p>`;
+           
+        })
+        .catch(error => {
+            console.log(error);
+        });
+}
+ 
+const generatorButton = document.getElementById('generate-button');
+generatorButton.addEventListener('click', getRandomQuote);
+
+
+",7,no use of async
+36,1/25/24 14:29:37,1/25/24 14:29:59,OluwayemiSanumi@womentechsters.org,Oluwayemi Sanumi,7,,1/27/24 22:32:40,"// callback Function function fetchDataWithCallback(error, data) {if (error){ console.error(error);} else{ console.log(data); }}; const urlApi = 'https://v2.jokeapi.dev/joke/Any' fetch(urlApi) .then(response => { if (!response.ok) { throw new Error('This is an Error'); } else { return response.json(); } }) .then(data => { fetchDataWithCallback(null, data); }) .catch(error => { throw new Error('Invalid URL'); }); // PROMISE function fetchDataFromApi(url) { return new Promise((resolve, reject) => { fetch(url) .then(response => { if (!response.ok) { throw new Error('This is an Error'); } return response.json(); }) .then(data => { resolve(data); }) .catch(error => { reject(new Error('Invalid URL')); }); }); } const urlAPI = 'https://v2.jokeapi.dev/joke/Any'; fetchDataFromApi(urlAPI) .then(data => { console.log(data); // Handle data from the API }) .catch(error => { console.error(error); // Handle errors });",7,no async code
+37,1/25/24 15:15:16,1/25/24 15:15:25,OghenetejiriAkpede@womentechsters.org,Oghenetejiri Akpede,7,,1/27/24 22:32:40,"// callback Function
+ 
+ 
+ function fetchDataWithCallback(error, data) {if (error){
+    console.error(error);} else{
+        console.log(data);
+    }};
+ 
+   
+const urlApi = 'https://v2.jokeapi.dev/joke/Any'
+    fetch(urlApi)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        } else {
+            return response.json();
+        }
+    })
+    .then(data => {
+        fetchDataWithCallback(null, data);
+    })
+    .catch(error => {
+        throw new Error('Invalid URL');
+    });
+ 
+ 
+    // PROMISE
+ 
+ 
+    function fetchDataFromApi(url) {
+        return new Promise((resolve, reject) => {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('This is an Error');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(new Error('Invalid URL'));
+                });
+        });
+    }
+   
+    const urlAPI = 'https://v2.jokeapi.dev/joke/Any';
+   
+    fetchDataFromApi(urlAPI)
+        .then(data => {
+            console.log(data); // Handle data from the API
+        })
+        .catch(error => {
+            console.error(error); // Handle errors
+        });
+",7,can not find the use of async
+38,1/25/24 15:37:57,1/25/24 15:39:05,MariaNamatovu@womentechsters.org,Maria Namatovu,7,,1/27/24 22:32:40,"html code
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <link rel=""stylesheet"" href=""./style.css"">
+    <title> Quote Generator</title>
+</head>
+<body>
+    <h1>Random Quotes Generator</h1>
+    <div id=""result""></div>
+    <button id=""generate-button"">Generate Quote</button>
+<script src=""./assignment.js""></script>
+</body>
+</html>
+
+javascript code:
+const quoteResult = document.getElementById('result');
+ 
+async function getRandomQuote() {
+    try {
+        const response = await fetch('https://api.quotable.io/random');
+ 
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.status}`);
+        }
+ 
+        const data = await response.json();
+        const quote = data.content;
+ 
+        quoteResult.innerHTML = `<p>${quote}</p>`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+ 
+const generatorButton = document.getElementById('generate-button');
+generatorButton.addEventListener('click', getRandomQuote);",7,no use of a prmise.then()
+39,1/25/24 14:28:55,1/25/24 16:04:42,GraceSalawe@womentechsters.org,Grace Salawe,6,,1/27/24 22:32:40,"const quoteResult = document.getElementById('result');
+
+async function getRandomQuote() {
+    try {
+        const response = await fetch('https://api.quotable.io/random');
+
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const quote = data.content;
+
+        quoteResult.innerHTML = `<p>${quote}</p>`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+const generatorButton = document.getElementById('generate-button');
+generatorButton.addEventListener('click', getRandomQuote);",6,"can't find, callback or promise"
+40,1/25/24 16:21:52,1/25/24 16:21:59,ClaireNabwami@womentechsters.org,Claire Nabwami,8,,1/27/24 22:32:40,"const quoteResult = document.getElementById('result');
+async function getRandomQuote(){
+    await fetch('https://api.quotable.io/random')
+   .then(response => console.log(response.json()))
+
+   .then(function(data){
+       const quote = data
+       console.log('data',data)
+   
+    quoteResult.innerHTML =`<p>${quote}</p>`
+   })
+   .catch(error =>
+        console.log(error));
+}
+ 
+const generatorButton = document.getElementById('generate-button');
+generatorButton.addEventListener('click', getRandomQuote)",8,"when using await, don't mix with async"
+41,1/26/24 12:49:24,1/26/24 12:50:14,MennaRihan@womentechsters.org,Menna Rihan,10,,1/27/24 22:32:40,"// CALLBACK
+const first = function() {
+    console.log(""This message is shown after 5 seconds"")
+};
+ setTimeout(first, 5000);
+
+// PROMISES
+let countValue = new Promise(function (resolve, reject) {
+    resolve(""Promise resolved"");
+    reject(""Promise error"");
+});
+
+countValue
+    .then(function successValue(result) {
+        console.log(""result:"", result);
+    })
+    .catch(function errorHandling(error) {
+        console.error(""Error:"", error);
+    });
+
+
+// ASYNC AND AWAIT 
+async function runProcess() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const json = await response.json();
+    console.log(json);
+}
+  
+runProcess();
+
+  
+",10,
+42,1/26/24 13:03:31,1/26/24 13:17:58,AnnahTumworobere@womentechsters.org,Annah Tumworobere,10,,1/27/24 22:32:40,"// Callback Function
+
+function fetchDataWithCallback(url, callback) {
+
+    fetch(url)
+
+        .then(response => {
+
+            if (!response.ok) {
+
+                throw new Error('This is an Error');
+
+            } else {
+
+                return response.json();
+
+            }
+
+        })
+
+        .then(data => {
+
+            callback(null, data); // Calling the callback function with data
+
+        })
+
+        .catch(error => {
+
+            callback(error, null); // Calling the callback function with an error
+
+        });
+
+}
+ 
+const urlCallback = 'https://v2.jokeapi.dev/joke/Any';
+ 
+fetchDataWithCallback(urlCallback, (error, data) => {
+
+    if (error) {
+
+        console.error(error);
+
+    } else {
+
+        console.log(data); // Handle data from the API
+
+    }
+
+});
+
+// Promise
+
+function fetchDataWithPromise(url) {
+
+    return new Promise((resolve, reject) => {
+
+        fetch(url)
+
+            .then(response => {
+
+                if (!response.ok) {
+
+                    throw new Error('This is an Error');
+
+                } else {
+
+                    return response.json();
+
+                }
+
+            })
+
+            .then(data => {
+
+                resolve(data); // Resolving the promise with data
+
+            })
+
+            .catch(error => {
+
+                reject(error); // Rejecting the promise with an error
+
+            });
+
+    });
+
+}
+ 
+const urlPromise = 'https://v2.jokeapi.dev/joke/Any';
+ 
+fetchDataWithPromise(urlPromise)
+
+    .then(data => {
+
+        console.log(data); // Handle data from the API
+
+    })
+
+    .catch(error => {
+
+        console.error(error); // Handle errors
+
+    });
+
+
+// Async/Await
+
+async function fetchDataWithAsyncAwait(url) {
+
+    try {
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+
+            throw new Error('This is an Error');
+
+        }
+
+        const data = await response.json();
+
+        console.log(data); // Handle data from the API
+
+    } catch (error) {
+
+        console.error(error); // Handle errors
+
+    }
+
+}
+ 
+const urlAsyncAwait = 'https://v2.jokeapi.dev/joke/Any';
+ 
+fetchDataWithAsyncAwait(urlAsyncAwait);
+",10,
+43,1/26/24 13:24:01,1/26/24 13:24:24,KofoworolaCole@womentechsters.org,Kofoworola Cole,10,,1/27/24 22:32:40,"// callback Function
+ 
+ 
+ function fetchDataWithCallback(error, data) {if (error){
+    console.error(error);} else{
+        console.log(data);
+    }};
+ 
+   
+const urlApi = 'https://v2.jokeapi.dev/joke/Any'
+    fetch(urlApi)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        } else {
+            return response.json();
+        }
+    })
+    .then(data => {
+        fetchDataWithCallback(null, data);
+    })
+    .catch(error => {
+        throw new Error('Invalid URL');
+    });
+ 
+ 
+    // PROMISE
+ 
+ 
+    function fetchDataFromApi(url) {
+        return new Promise((resolve, reject) => {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('This is an Error');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(new Error('Invalid URL'));
+                });
+        });
+    }
+   
+    const urlAPI = 'https://v2.jokeapi.dev/joke/Any';
+   
+    fetchDataFromApi(urlAPI)
+        .then(data => {
+            console.log(data); // Handle data from the API
+        })
+        .catch(error => {
+            console.error(error); // Handle errors
+        });",10,"<span>can't find, async/await</span>"
+44,1/26/24 15:08:49,1/26/24 15:12:47,KelechiAgwu@womentechsters.org,Kelechi Agwu,8,,1/27/24 22:32:40,"
+const quoteResult = document.getElementById('result'); async function getRandomQuote() { try { const response = await fetch('https://api.quotable.io/random'); if (!response.ok) { throw new Error(`Network response was not ok: ${response.status}`); } const data = await response.json(); const quote = data.content; quoteResult.innerHTML = `<p>${quote}</p>`; } catch (error) { console.error(error); } } const generatorButton = document.getElementById('generate-button'); generatorButton.addEventListener('click', getRandomQuote);
+
+
+",8,"<span>can't find,&nbsp; promise.then</span>"
+45,1/26/24 15:12:20,1/26/24 15:30:29,Nina.SpioQuansah@womentechsters.org,Nina Spio Quansah,8,,1/27/24 22:32:40,"<!DOCTYPE html> <html lang=""en""> <head> <meta charset=""UTF-8""> <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""> <link rel=""stylesheet"" href=""./style.css""> <title> Quote Generator</title> </head> <body> <h1>Random Quotes Generator</h1> <div id=""result""></div> <button id=""generate-button"">Generate Quote</button> <script src=""./assignment.js""></script> </body> </html>
+
+body {
+ font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; 
+}
+
+ .container { max-width: 800px; margin: 0 auto; padding: 20px;
+}
+
+ . h1 { 
+text-align: center; color: #333; 
+} 
+
+#result {
+ margin-top: 20px; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 4px; rgba(0, 0, 0, 0.1); 
+}
+
+ #result p { 
+font-size: 18px; line-height: 1.6; color: #555; 
+}
+
+ #generate-button { 
+display: block;
+ margin: 20px auto;
+ padding: 10px 20px; background-color: #007bff; color: #fff; 
+border: none; 
+border-radius: 5px; 
+font-size: 16px;
+ cursor: pointer;
+
+ }
+
+
+
+const quoteResult = document.getElementById('result'); 
+
+async function getRandomQuote(
+){
+
+ try {
+ const response = await fetch('https://api.quotable.io/random');
+
+ if (!response.ok) { 
+throw new Error(`Network response was not ok: ${response.status}`);
+ } 
+const data = await response.json();
+ const quote = data.content; quote
+Result.innerHTML = `<p>${quote}</p>`;
+ } catch (error) { console.error(error); } } const generatorButton = document.getElementById('generate-button'); generatorButton.addEventListener('click', getRandomQuote);",8,"<span>can't find,&nbsp; promise.then</span>"
+46,1/26/24 15:43:16,1/26/24 15:47:49,Oluwatoyin.Oredein@womentechsters.org,Oluwatoyin Oredein,10,,1/27/24 22:32:40,"// CALLBACK
+const urlApi = 'https://v2.jokeapi.dev/joke/Any';
+function fetchDataWithCallback(error, data) {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(data);
+    }
+};
+
+fetch(urlApi)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        } else {
+            return response.json();
+        }
+    })
+    .then(data => {
+        fetchDataWithCallback(null, data);
+    })
+    .catch(error => {
+        throw new Error('Invalid URL');
+    });
+
+
+// PROMISE
+function fetchDataFromApi(url) {
+    return new Promise((resolve, reject) => {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('This is an Error');
+                }
+                return response.json();
+            })
+            .then(data => {
+                resolve(data);
+            })
+            .catch(error => {
+                reject(new Error('Invalid URL'));
+            });
+    });
+}
+// Usage
+fetchDataFromApi(urlApi)
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+
+// ASYN AWAIT
+async function fetchDataWithAsyncAwait() {
+    try {
+        const response = await fetch(urlApi);
+
+        if (!response.ok) {
+            throw new Error('This is an Error');
+        }
+
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Fetch error:', error);
+        throw error;
+    }
+}
+
+// Example usage
+(async () => {
+    try {
+        const data = await fetchDataWithAsyncAwait();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+})();",10,
+47,1/26/24 17:00:51,1/26/24 17:01:16,SimbiatAwoyemi@womentechsters.org,Simbiat Awoyemi,8,,1/27/24 22:32:40,"const quoteResult = document.getElementById('result'); async function getRandomQuote() { try { const response = await fetch('https://api.quotable.io/random'); if (!response.ok) { throw new Error(`Network response was not ok: ${response.status}`); } const data = await response.json(); const quote = data.content; quoteResult.innerHTML = `<p>${quote}</p>`; } catch (error) { console.error(error); } } const generatorButton = document.getElementById('generate-button'); generatorButton.addEventListener('click', getRandomQuote);",8,
+48,1/26/24 17:48:57,1/26/24 17:51:06,PipeloluwaAremo@womentechsters.org,Pipeloluwa Aremo,8,,1/27/24 22:32:40,"async function fetchRandomQuote() {
+    try {
+      const response = await fetch('https://api.quotable.io/random');
+      const data = await response.json();
+
+      if (response.ok) {
+        const quoteTextElement = document.getElementById('quote-text');
+        quoteTextElement.textContent = `""${data.content}"" - ${data.author}`;
+      } else {
+        console.error('Error fetching quote:', data);
+      }
+    } catch (error) {
+      console.error('Error during fetch:', error);
+    }
+  }
+
+  // Fetch a random quote when the page loads
+  document.addEventListener('DOMContentLoaded', fetchRandomQuote);",8,
+49,1/26/24 17:48:57,1/26/24 17:51:34,AnthoniaMbah@womentechsters.org,Anthonia Mbah,8,,1/27/24 22:32:40,"const quoteResult = document.getElementById('result');
+ 
+async function getRandomQuote() {
+    try {
+        const response = await fetch('https://api.quotable.io/random');
+ 
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.status}`);
+        }
+ 
+        const data = await response.json();
+        const quote = data.content;
+ 
+        quoteResult.innerHTML = `<p>${quote}</p>`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+ 
+const generatorButton = document.getElementById('generate-button');
+generatorButton.addEventListener('click', getRandomQuote);
+
+This uses async and await.",8,

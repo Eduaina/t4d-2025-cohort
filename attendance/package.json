@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "chardet": "^2.0.0",
+    "csv": "^6.3.5",
+    "csv-parser": "^3.0.0",
+    "fast-csv": "^5.0.0",
+    "iconv-lite": "^0.6.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "run": "node index.js",
+    "attendance-list": "node attendanceList.js",
+    "score": "node score.js",
+    "students": "node students.js",
+    "get-assessment": "node getAssessment.js",
+    "get-emails": "node getEmails.js",
+    "all": "npm run attendance-list && npm run score && npm run students && npm run get-assessment && npm run get-emails && npm run start"
+  }
+}

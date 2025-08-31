@@ -1,0 +1,11 @@
+{
+  "name": "t4d_2024_team",
+  "version": "1.0.0",
+  "main": "team.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node tool.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
