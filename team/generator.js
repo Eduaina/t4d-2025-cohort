@@ -40,6 +40,6 @@ const teams = randomSelector(2, student)
 const toTeamsJson = `
 const allTeams = ${JSON.stringify(teams, null, 2)}
 `;
-fs.writeFileSync('./teams/teams.js', toTeamsJson, 'utf-8')
+fs.writeFileSync('./teams.js', toTeamsJson, 'utf-8')
 
 console.log('Teams have been generated successfully')

@@ -3,47 +3,111 @@
 
 <head>
     <style>
-        #teamList {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --accent: #f59e42;
+            --bg: #f8fafc;
+            --table-bg: #fff;
+            --table-row-alt: #f1f5f9;
+            --border: #e2e8f0;
+            --shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
-        #teamList td,
-        #teamList th {
-            border: 1px solid #ddd;
-            padding: 8px;
+        body {
+            background: var(--bg);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        #teamList tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        #teamList tr:hover {
-            background-color: #ddd;
-        }
-
-        #teamList th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        * {
-            box-sizing: border-box;
+        h1 {
+            text-align: center;
+            color: var(--primary-dark);
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
         }
 
         #myInput {
-            background-image: url('/css/searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            width: 100%;
-            font-size: 16px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
+            display: block;
+            margin: 0 auto 2rem auto;
+            width: 90%;
+            max-width: 400px;
+            font-size: 1rem;
+            padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+            border: 1.5px solid var(--border);
+            border-radius: 2rem;
+            background: #fff url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/search.svg') 12px center no-repeat;
+            background-size: 1.2rem 1.2rem;
+            box-shadow: var(--shadow);
+            transition: border 0.2s;
+        }
+        #myInput:focus {
+            outline: none;
+            border: 1.5px solid var(--primary);
+        }
+
+        #teamList {
+            width: 95%;
+            margin: 0 auto 2rem auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--table-bg);
+            box-shadow: var(--shadow);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        #teamList th, #teamList td {
+            padding: 1rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        #teamList th {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border: none;
+        }
+
+        #teamList tr:nth-child(even) {
+            background: var(--table-row-alt);
+        }
+
+        #teamList tr:hover {
+            background: var(--accent);
+            color: #fff;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        #teamList tr:last-child td {
+            border-bottom: none;
+        }
+
+        @media (max-width: 700px) {
+            #teamList, #teamList thead, #teamList tbody, #teamList th, #teamList td, #teamList tr {
+                display: block;
+            }
+            #teamList thead {
+                display: none;
+            }
+            #teamList tr {
+                margin-bottom: 1.5rem;
+                background: var(--table-bg) !important;
+                box-shadow: var(--shadow);
+                border-radius: 0.75rem;
+                padding: 0.5rem 0.75rem;
+            }
+            #teamList td {
+                border: none;
+                padding: 0.7rem 1rem;
+                font-size: 1rem;
+                position: relative;
+            }
         }
     </style>
 </head>
