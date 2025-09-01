@@ -303,6 +303,13 @@ const groupStudents = {
       "WtEmailAddress": "miraclekenzie13@outlook.com",
       "StudentIdNumber": "wtf/2025/1889",
       "Country": "nigeria"
+    },
+    {
+      "FirstName": "Christiana",
+      "LastName": "Akogwu",
+      "WtEmailAddress": "tianaahakogwu@outlook.com",
+      "StudentIdNumber": "wtf/2025/7117",
+      "Country": "nigeria"
     }
   ],
   "8": [
@@ -311,6 +318,13 @@ const groupStudents = {
       "LastName": "ekeji",
       "WtEmailAddress": "karenekeji@outlook.com",
       "StudentIdNumber": "wtf/2025/6815",
+      "Country": "nigeria"
+    },,
+    {
+      "FirstName": "Olubunmi",
+      "LastName": "Elegbeleye",
+      "WtEmailAddress": "loiszy5@outlook.com",
+      "StudentIdNumber": "wtf/2025/7574",
       "Country": "nigeria"
     },
     {

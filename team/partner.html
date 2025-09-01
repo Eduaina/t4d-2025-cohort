@@ -121,9 +121,9 @@
             <tr>
                 <th>Team Name</th>
                 <th> Member 1 Name & Email</th>
-                <th> Member 1 Group </th>
+                <!-- <th> Member 1 Group </th> -->
                 <th> Member 2 Name & Email</th>
-                <th> Member 2 Group </th>
+                <!-- <th> Member 2 Group </th> -->
             </tr>
         </thead>
     </table>
@@ -136,8 +136,8 @@
             const names = team.map(person => `
             <td>${person.FirstName} ${person.LastName} - ${person.Email || person.WtEmailAddress}</td>
             
-            <td>${person.GroupName || person.team?.Teamname || 'N/A'}</td>
             `).join('');
+            // <td>${person.GroupName || person.team?.Teamname || 'N/A'}</td>
             return `<td>Partners ${teamId}</td> ${names}`
         }
 

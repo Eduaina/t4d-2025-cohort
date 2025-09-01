@@ -830,6 +830,18 @@ const allPartners = [
         "Teamname": "scriptsistas",
         "Introspeech": "\"scripting dreams together 💌 — the scriptsistas never code alone!\""
       }
+    },
+    {
+      "FirstName": "Olubunmi",
+      "LastName": "Elegbeleye",
+      "WtEmailAddress": "loiszy5@outlook.com",
+      "StudentIdNumber": "wtf/2025/7574",
+      "Country": "nigeria",
+      "team": { 
+        "Teamid": "8",
+    "Teamname": "debugdolls",
+    "Introspeech": "\"cute outside, deadly inside 💣 — debugdolls make errors disappear!\""
+      }
     }
   ]
 ]
