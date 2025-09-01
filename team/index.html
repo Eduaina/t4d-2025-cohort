@@ -6,7 +6,7 @@
         :root {
             --primary: #2563eb;
             --primary-dark: #1e40af;
-            --accent: #f59e42;
+            --accent: #7542f5;
             --bg: #f8fafc;
             --table-bg: #fff;
             --table-row-alt: #f1f5f9;
@@ -90,14 +90,15 @@
 
         @media (max-width: 700px) {
             #teamList, #teamList thead, #teamList tbody, #teamList th, #teamList td, #teamList tr {
-                display: block;
+                display: flex;
+                flex-direction: column;
             }
             #teamList thead {
                 display: none;
             }
             #teamList tr {
                 margin-bottom: 1.5rem;
-                background: var(--table-bg) !important;
+                /* background: var(--table-bg) !important; */
                 box-shadow: var(--shadow);
                 border-radius: 0.75rem;
                 padding: 0.5rem 0.75rem;
@@ -121,6 +122,7 @@
             <tr>
                 <th> Team ID</th>
                 <th>Team Name</th>
+                <th> Members </th>
                 <th> Subx </th>
             </tr>
         </thead>
@@ -130,7 +132,15 @@
     <script>
         // Function to format a team as a string
         function formatTeam(team, teamId) {
-            return `<td>Team ${teamId}</td><td>${team?.Teamname || 'N/A'}</td><td> ${team.Introspeech}</td>`
+            return `
+            <td>Team ${teamId}</td><td>${team?.Teamname || 'N/A'}</td>
+            <td style="text-transform: capitalize;">
+                <ul>
+                    ${groupStudents[teamId]?.map(member => `<li>${member.FirstName} ${member.LastName} </li>`).join('') || '<li>N/A</li>'}
+                    </ul>
+            </td>
+            <td> ${team.Introspeech.toString()}</td>
+            `
         }
 
         // Function to generate the HTML and insert it into the page
