@@ -49,7 +49,8 @@ shuffleList(student)
 shuffleList(student)
 
 // console.log(student);
-const {teams, groupStudents} = randomSelector(5, student, teamsMembers)
+const { groupStudents} = randomSelector(5, student, teamsMembers)
+const {teams} = randomSelector(2, student, teamsMembers)
 const toTeamsJson = `
 const allTeams = ${JSON.stringify(teamsMembers, null, 2)};
 const groupStudents = ${JSON.stringify(groupStudents, null, 2)};
