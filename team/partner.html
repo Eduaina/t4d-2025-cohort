@@ -134,7 +134,7 @@
         function formatTeam(team, teamId) {
             // <td>${person.FirstName} ${person.LastName} - ${person.Email || person.WtEmailAddress}</td>
             const names = team.map(person => `
-            <td>${person.FirstName} ${person.LastName}</td>
+            <td>${person.FirstName} ${person.LastName} - ${person.Email || person.WtEmailAddress}</td>
             
             <td>${person.GroupName || person.team?.Teamname || 'N/A'}</td>
             `).join('');
