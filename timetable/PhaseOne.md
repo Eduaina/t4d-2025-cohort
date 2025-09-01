@@ -19,7 +19,7 @@
 
 **Theme:** Getting set up + Digital confidence + Intro to programming & AI.
 
-* **Day 1 (Mon)**
+* **Day 1 (Mon)** https://www.linkedin.com/pulse/digital-literacy-file-organization-foundation-101-emmanuel-daniel-47paf
 
   * Introduction to the program & vision.
   * Digital literacy (Internet basics, browsers, productivity tools).
