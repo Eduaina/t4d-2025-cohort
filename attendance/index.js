@@ -1,4 +1,4 @@
-const studentList = require('./students').modules
+const studentList = require('../students').modules
 const allAttendanceList = require('./attendanceList').modules
 const { writeToFile } = require('./utils').modules
 

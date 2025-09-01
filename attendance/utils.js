@@ -1,6 +1,7 @@
 const fs = require('fs')
 
-const csvConverter = (rows, separator = ',', stopWord = '', filteredWords = undefined) => {
+const csvConverter = (rows, separator = ',', stopWord = '',  config={}) => {
+  const {filteredWords, useToPascalCase} = config;
   const headers = rows.shift().toLowerCase().split(separator);
   const convertedData = [];
 
@@ -17,7 +18,11 @@ const csvConverter = (rows, separator = ',', stopWord = '', filteredWords = unde
     const newObj = {};
     const rowValues = row.split(separator);
     headers.forEach((header, ind) => {
-      newObj[header?.trim().toLowerCase()] = rowValues[ind]?.trim()?.toLowerCase();
+      if (useToPascalCase) {
+        newObj[toPascalCase(header?.trim().toLowerCase())] = rowValues[ind]?.trim()?.toLowerCase();
+      } else {
+        newObj[header?.trim().toLowerCase()] = rowValues[ind]?.trim()?.toLowerCase();
+      }
     });
 
     convertedData.push(newObj);
@@ -52,9 +57,16 @@ function calculatePercentage(points, totalPoints) {
   console.log({ points, totalPoints })
   return Math.floor((points / totalPoints) * 100);
 }
+function toPascalCase(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]+(.)/g, (match, chr) => chr.toUpperCase())
+    .replace(/^(.)/, (match, chr) => chr.toUpperCase());
+}
 exports.modules = {
   csvConverter,
   writeToFile,
   csvConverter2,
-  calculatePercentage
+  calculatePercentage,
+  toPascalCase
 }

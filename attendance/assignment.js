@@ -1,4 +1,4 @@
-const studentList = require('./students').modules
+const studentList = require('../students').modules
 const { writeToFile, calculatePercentage } = require('./utils').modules
 const assessments = require('./getAssessment').modules
 

@@ -113,24 +113,32 @@
 </head>
 
 <body>
-    <h1> Your team mates</h1>
+    <h1> Your Learning partner</h1>
 
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
     <table id="teamList">
         <thead>
             <tr>
-                <th> Team ID</th>
                 <th>Team Name</th>
-                <th> Subx </th>
+                <th> Member 1 Name & Email</th>
+                <th> Member 1 Group </th>
+                <th> Member 2 Name & Email</th>
+                <th> Member 2 Group </th>
             </tr>
         </thead>
     </table>
 
-    <script src="./teamMembers.js"></script>
+    <script src="./groups.js"></script>
     <script>
         // Function to format a team as a string
         function formatTeam(team, teamId) {
-            return `<td>Team ${teamId}</td><td>${team?.Teamname || 'N/A'}</td><td> ${team.Introspeech}</td>`
+            // <td>${person.FirstName} ${person.LastName} - ${person.Email || person.WtEmailAddress}</td>
+            const names = team.map(person => `
+            <td>${person.FirstName} ${person.LastName}</td>
+            
+            <td>${person.GroupName || person.team?.Teamname || 'N/A'}</td>
+            `).join('');
+            return `<td>Partners ${teamId}</td> ${names}`
         }
 
         // Function to generate the HTML and insert it into the page
@@ -145,7 +153,7 @@
         }
 
         // Call the function to render the teams
-        renderTeams(allTeams);
+        renderTeams(allPartners);
         function myFunction() {
             var input, filter, table, tr, td, i, txtValue;
             input = document.getElementById("myInput");

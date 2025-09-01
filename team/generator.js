@@ -1,18 +1,8 @@
-const studentList = require('./students.csv.js');
-const teamsList = require('./teams.csv.js');
+const studentList = require('../students');
+const teamsList = require('./teams.js');
 const fs = require('fs')
 
-const csvConverter = (data) => {
-    const rows = data.trim().split('\n');
-    const headers = rows.shift().split(',');
-    return rows.map((row) => {
-        const newObj = {};
-        headers.forEach((header, ind) => {
-            newObj[header] = row.split(',')[ind].trim()
-        })
-        return newObj;
-    })
-}
+
 const shuffleList = (arrayStudent) => {
     for (let i = arrayStudent.length -1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1))
@@ -46,16 +36,21 @@ const randomSelector = (size=2, students, teamsMembers) => {
     }
     return teams;
 }
-const student =  csvConverter(studentList.modules)
-const teamsMembers =  csvConverter(teamsList.modules)
+const student =  (studentList.modules)
+const teamsMembers =  (teamsList.modules)
+
 shuffleList(student)
 shuffleList(student)
 
 // console.log(student);
 const teams = randomSelector(2, student, teamsMembers)
 const toTeamsJson = `
-const allTeams = ${JSON.stringify(teams, null, 2)}
+const allTeams = ${JSON.stringify(teamsMembers, null, 2)}
+`;
+const partners = `
+const allPartners = ${JSON.stringify(teams, null, 2)}
 `;
 fs.writeFileSync('./teamMembers.js', toTeamsJson, 'utf-8')
+fs.writeFileSync('./groups.js', partners, 'utf-8')
 
 console.log('Teams have been generated successfully')

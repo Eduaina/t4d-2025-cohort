@@ -1,4 +1,4 @@
-exports.modules = `TeamID,TeamName,IntroSpeech
+TeamID,TeamName,IntroSpeech
 1,ByteQueens,"We are the ByteQueens 👑 — ruling every repo with elegance and power!"
 2,SyntaxSquad,"Syntax flawless, style unmatched 💻 — we are the SyntaxSquad!"
 3,CodeDivas,"Drama-free, bug-free 💅 — the CodeDivas always deliver perfection!"
@@ -19,4 +19,3 @@ exports.modules = `TeamID,TeamName,IntroSpeech
 18,DataDolls,"Big data, bigger energy 💾 — DataDolls run the numbers with style!"
 19,Firewalls,"Protected, powerful, unstoppable 🔥 — Firewalls never fall!"
 20,CyberBaddies,"Baddies in cyberspace 💋 — CyberBaddies own the digital streets!"
-`

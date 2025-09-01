@@ -1,5 +1,5 @@
 const { writeToFile } = require('./utils').modules
-const studentList = require('./students').modules
+const studentList = require('../students').modules
 
 studentList.forEach((student, index) => {
     const email = student['wt email address'];
