@@ -187,6 +187,13 @@ const groupStudents = {
       "Country": "rwanda"
     },
     {
+      "FirstName": "Momoh",
+      "LastName": "gbenuade",
+      "WtEmailAddress": "starrmomo@outlook.com",
+      "StudentIdNumber": "wtf/2025/4304",
+      "Country": "rwanda"
+    },
+    {
       "FirstName": "senait",
       "LastName": "gebreegziabher",
       "WtEmailAddress": "senaitg15@outlook.com",
