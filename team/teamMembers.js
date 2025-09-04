@@ -139,6 +139,13 @@ const groupStudents = {
       "WtEmailAddress": "nokuthulamtshali19@outlook.com",
       "StudentIdNumber": "wtf/2025/7934",
       "Country": "south africa"
+    },
+    {
+      "FirstName": "Odunfa",
+      "LastName": "Oreofeoluwa",
+      "WtEmailAddress": "derinsterling@outlook.com",
+      "StudentIdNumber": "wtf/2025/1978",
+      "Country": "nigeria"
     }
   ],
   "3": [

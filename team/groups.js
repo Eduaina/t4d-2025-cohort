@@ -248,10 +248,10 @@ const allPartners = [
       }
     },
     {
-      "FirstName": "albright",
-      "LastName": "atsiaya",
-      "WtEmailAddress": "albrightaseyo@outlook.com",
-      "StudentIdNumber": "wtf/2025/5059",
+      "FirstName": "Peace",
+      "LastName": "Oreofeoluwa",
+      "WtEmailAddress": "derinsterling@outlook.com",
+      "StudentIdNumber": "wtf/2025/1978",
       "Country": "kenya",
       "team": {
         "Teamid": "11",
@@ -574,10 +574,10 @@ const allPartners = [
   ],
   [
     {
-      "FirstName": "kaloso",
-      "LastName": "mhlelu",
-      "WtEmailAddress": "kaloso8833@outlook.com",
-      "StudentIdNumber": "wtf/2025/8833",
+      "FirstName": "Olubunmi",
+      "LastName": "Olubunmi",
+      "WtEmailAddress": "loiszy5@outlook.com",
+      "StudentIdNumber": "wtf/2025/7574",
       "Country": "botswana",
       "team": {
         "Teamid": "2",
