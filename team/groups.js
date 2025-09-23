@@ -842,6 +842,18 @@ const allPartners = [
     "Teamname": "debugdolls",
     "Introspeech": "\"cute outside, deadly inside 💣 — debugdolls make errors disappear!\""
       }
+    },
+    {
+      "FirstName": "rahmota",
+      "LastName": "Lawal",
+      "WtEmailAddress": "rahmotallah_ike@outlook.com",
+      "StudentIdNumber": "wtf/2025/8244",
+      "Country": "nigeria",
+      "team": {
+        "Teamid": "6",
+        "Teamname": "pixelgang",
+        "Introspeech": "\"sharp pixels, sharper minds 🎯 — pixelgang is in the building!\""
     }
+    },
   ]
 ]
